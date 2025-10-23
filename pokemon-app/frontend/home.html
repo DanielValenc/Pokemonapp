@@ -2,16 +2,26 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Pokédex</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Pokédex</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="container">
-    <h2>Buscador de Pokémon</h2>
-    <input id="pokemonName" placeholder="Ej: pikachu" />
-    <button id="searchBtn">Buscar</button>
+<body class="pokedex-page">
+  <!-- Pokédex Header -->
+  <header class="pokedex-header">
+    <div class="header-decoration"></div>
+    <h2>Interactive Pokédex</h2>
+  </header>
 
-    <div id="pokemonInfo"></div>
+  <!-- 🟢 Results above -->
+  <div id="pokemonResults"></div>
+
+  <!-- 🔻 Fixed search engine down -->
+  <div id="searchContainer">
+    <div class="search-wrapper">
+      <input id="pokemonName" placeholder="Search Pokémon..." autocomplete="off" />
+      <div id="suggestions" class="suggestions"></div>
+    </div>
   </div>
 
   <script src="home.js"></script>
