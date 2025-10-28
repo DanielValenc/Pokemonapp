@@ -2,7 +2,7 @@ document.getElementById('loginBtn').addEventListener('click', async () => {
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
-  const res = await fetch('http://localhost:3000/api/login', {
+  const res = await fetch('https://pokedesk-n000.onrender.com/api/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ username, password })
