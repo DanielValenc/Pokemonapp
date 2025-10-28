@@ -22,4 +22,6 @@ app.use((req, res) => {
 
 // Iniciar servidor
 const PORT = 3000;
-app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`));
+
+/* app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:${PORT}`)); */
+app.listen(PORT, () => console.log(`Servidor corriendo en https://pokedesk-n000.onrender.com/`));
